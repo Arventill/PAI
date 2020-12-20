@@ -1,6 +1,5 @@
 using ProgramowanieAplikacjiInternetowych.Repository;
 using ProgramowanieAplikacjiInternetowych.Repository.Users;
-using ProgramowanieAplikacjiInternetowych.Repository.Models;
 using ProgramowanieAplikacjiInternetowych.Services.Users;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -8,7 +7,6 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Hosting;
 using ProgramowanieAplikacjiInternetowych.Utils;
 using ProgramowanieAplikacjiInternetowych.Utils.ExtensionMethods;
 using IHostingEnvironment = Microsoft.AspNetCore.Hosting.IHostingEnvironment;
