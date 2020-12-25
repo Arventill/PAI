@@ -5,8 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Controllers\" />
-    <Folder Include="Models\" />
+    <None Remove="pai_diagram.jpg" />
   </ItemGroup>
 
   <ItemGroup>
