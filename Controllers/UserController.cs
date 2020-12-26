@@ -71,9 +71,9 @@ namespace ProgramowanieAplikacjiInternetowych.Controllers
                 : new OkObjectResult(Models.Common.Response.Failed());
         }
 
-        public bool SetNegativeUserStatus(string hash) => _usersDataService.SetNegativeStatus(hash);
+        public IActionResult SetNegativeUserStatus(string hash) => new OkObjectResult(_usersDataService.SetNegativeStatus(hash));
 
-        public bool DeleteUser(string hash) => _usersDataService.DeleteUser(hash);
+        public IActionResult DeleteUser(string hash) => new OkObjectResult(_usersDataService.DeleteUser(hash));
 
         //TODO: README
         //Metoda do zwracania wszystkich użytkowników w UsersRepository.
