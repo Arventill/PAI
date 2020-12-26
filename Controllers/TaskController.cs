@@ -42,7 +42,7 @@ namespace ProgramowanieAplikacjiInternetowych.Controllers
         }
 
         [HttpGet]
-        public List<Task> GetAllTasks() => _tasksDataService.GetTasksOrdered().Data;
+        public IActionResult GetAllTasks() => new OkObjectResult(_tasksDataService.GetTasksOrdered().Data);
 
         [HttpPost]
         public IActionResult GetTaskByPredicate(TaskGetDataRequest request)
@@ -56,16 +56,17 @@ namespace ProgramowanieAplikacjiInternetowych.Controllers
         }
 
         [HttpPost]
-        public bool DeleteTask(Task task) => _tasksDataService.DeleteTask(task);
+        public IActionResult DeleteTask(Task task) => new OkObjectResult(_tasksDataService.DeleteTask(task));
 
-        public bool ChangeTaskStatus(int taskId, TaskStatus taskStatus)
+        [HttpPost]
+        public IActionResult ChangeTaskStatus(int taskId, TaskStatus taskStatus)
         {
             if (taskId > 0)
             {
-                return _tasksDataService.ChangeTaskStatus(taskId, taskStatus);
+                return new OkObjectResult(_tasksDataService.ChangeTaskStatus(taskId, taskStatus));
             }
 
-            return false;
+            return new OkObjectResult(false);
         }
     }
 }
