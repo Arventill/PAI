@@ -7,6 +7,8 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using ProgramowanieAplikacjiInternetowych.Repository.Tasks;
+using ProgramowanieAplikacjiInternetowych.Services.Tasks;
 using ProgramowanieAplikacjiInternetowych.Utils;
 using ProgramowanieAplikacjiInternetowych.Utils.ExtensionMethods;
 using IHostingEnvironment = Microsoft.AspNetCore.Hosting.IHostingEnvironment;
@@ -52,12 +54,14 @@ namespace ProgramowanieAplikacjiInternetowych
 
         private static void RegisterServices(ref IServiceCollection services)
         {
-            services.AddTransient<IUsersDataService, UserDataService>();
+            services.AddTransient<IUsersDataService, UsersDataService>();
+            services.AddTransient<ITasksDataService, TasksDataService>();
         }
 
         private static void RegisterRepositories(ref IServiceCollection services)
         {
             services.AddTransient<IUsersRepository, UsersRepository>();
+            services.AddTransient<ITasksRepository, TasksRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

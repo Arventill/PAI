@@ -89,7 +89,9 @@ namespace ProgramowanieAplikacjiInternetowych.Services.Users
         {
             try
             {
-                return string.IsNullOrWhiteSpace(hash) && _usersRepository.DeleteUser(hash);
+                return string.IsNullOrWhiteSpace(hash) 
+                       && _usersRepository.GetAllUsers(u => u.Hash == hash).Any() 
+                       && _usersRepository.DeleteUser(hash);
             }
             catch (Exception ex)
             {
