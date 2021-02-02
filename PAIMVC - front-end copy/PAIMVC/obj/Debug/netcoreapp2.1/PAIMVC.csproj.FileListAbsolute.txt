@@ -1,0 +1,6 @@
+C:\Users\DRAGON\source\repos\PAIMVC\PAIMVC\obj\Debug\netcoreapp2.1\PAIMVC.csprojAssemblyReference.cache
+C:\Users\DRAGON\source\repos\PAIMVC\PAIMVC\obj\Debug\netcoreapp2.1\PAIMVC.AssemblyInfoInputs.cache
+C:\Users\DRAGON\source\repos\PAIMVC\PAIMVC\obj\Debug\netcoreapp2.1\PAIMVC.AssemblyInfo.cs
+C:\Users\DRAGON\source\repos\PAIMVC\PAIMVC\obj\Debug\netcoreapp2.1\PAIMVC.csproj.CoreCompileInputs.cache
+C:\Users\DRAGON\source\repos\PAIMVC\PAIMVC\obj\Debug\netcoreapp2.1\PAIMVC.RazorAssemblyInfo.cache
+C:\Users\DRAGON\source\repos\PAIMVC\PAIMVC\obj\Debug\netcoreapp2.1\PAIMVC.RazorAssemblyInfo.cs

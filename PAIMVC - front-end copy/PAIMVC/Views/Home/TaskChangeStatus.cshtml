@@ -1,0 +1,48 @@
+﻿@model PAIMVC.Models.Requests.TaskRegisterRequest
+@{
+    ViewData["Title"] = "TaskStatusChange";
+}
+
+<h1><center>TASK CHANGE STATUS</center></h1>
+<br />
+<div class="page-content container-fluid">
+    <div class="" data-plugin="matchHeight" data-by-row="true">
+        @using (Html.BeginForm("PTaskStatusChange", "Home", FormMethod.Post))
+        {
+            <div class="panel">
+                <div class="panel-body">
+                    <div class="">
+                        <div class="form-group row">
+                            <div class="col-sm-12">
+
+
+                                <div class="form-group row">
+                                    @Html.LabelFor(model => model.Id, new { @class = "col-sm-3 col-form-label" })
+                                    <div class="col-sm-9">
+                                        @Html.TextBoxFor(model => model.Id, new { @class = "form-control" })
+                                        @Html.ValidationMessageFor(model => model.Id)
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    @Html.LabelFor(model => model.Status, new { @class = "col-sm-3 col-form-label" })
+                                    <div class="col-sm-9">
+                                        @Html.TextBoxFor(model => model.Status, new { @class = "form-control" })
+                                        @Html.ValidationMessageFor(model => model.Status)
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="rowError">@Html.ValidationSummary(true)</div>
+
+                        <div class="text-right">
+                            <a href="@Url.Action("Index", "Home")" class="button" style="margin-right: 10px;">Powrót</a>
+                            <button type="submit" value="True" class="btn btn-primary" id="validateButton2">Zapisz zmiany</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+
+    </div>
+</div>

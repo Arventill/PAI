@@ -1,0 +1,70 @@
+﻿@model PAIMVC.Models.Requests.TaskRegisterRequest
+
+@{
+    ViewData["Title"] = "TaskRegister";
+}
+
+<h1><center>TASK REGISTER</center></h1>
+<br/>
+<div class="page-content container-fluid">
+    <div class="" data-plugin="matchHeight" data-by-row="true">
+        @using (Html.BeginForm("PTaskRegister", "Home", FormMethod.Post))
+        {
+            <div class="panel">
+                <div class="panel-body">
+                    <div class="">
+                        <div class="form-group row">
+                            <div class="col-sm-12">
+                                
+
+                                <div class="form-group row">
+                                    @Html.LabelFor(model => model.Title, new { @class = "col-sm-3 col-form-label" })
+                                    <div class="col-sm-9">
+                                        @Html.TextBoxFor(model => model.Title, new { @class = "form-control" })
+                                        @Html.ValidationMessageFor(model => model.Title)
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    @Html.LabelFor(model => model.Description, new { @class = "col-sm-3 col-form-label" })
+                                    <div class="col-sm-9">
+                                        @Html.TextBoxFor(model => model.Description, new { @class = "form-control" })
+                                        @Html.ValidationMessageFor(model => model.Description)
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    @Html.LabelFor(model => model.ExpirationDate, new { @class = "col-sm-3 col-form-label" })
+                                    <div class="col-sm-9">
+                                        @Html.TextBoxFor(model => model.ExpirationDate, new { @class = "form-control" })
+                                        @Html.ValidationMessageFor(model => model.ExpirationDate)
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    @Html.LabelFor(model => model.Type, new { @class = "col-sm-3 col-form-label" })
+                                    <div class="col-sm-9">
+                                        @Html.TextBoxFor(model => model.Type, new { @class = "form-control" })
+                                        @Html.ValidationMessageFor(model => model.Type)
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    @Html.LabelFor(model => model.Status, new { @class = "col-sm-3 col-form-label" })
+                                    <div class="col-sm-9">
+                                        @Html.TextBoxFor(model => model.Status, new { @class = "form-control" })
+                                        @Html.ValidationMessageFor(model => model.Status)
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="rowError">@Html.ValidationSummary(true)</div>
+
+                        <div class="text-right">
+                            <a href="@Url.Action("Index", "Home")" class="button" style="margin-right: 10px;">Powrót</a>
+                            <button type="submit" value="True" class="btn btn-primary" id="validateButton2">Zapisz zmiany</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+
+    </div>
+</div>

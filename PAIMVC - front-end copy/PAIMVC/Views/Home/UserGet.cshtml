@@ -1,0 +1,50 @@
+﻿@model PAIMVC.Models.Requests.UserRegisterRequest
+@{
+    ViewData["Title"] = "UserGet";
+}
+
+<h1><center>USER GET</center></h1>
+<br />
+<div class="page-content container-fluid">
+    <div class="" data-plugin="matchHeight" data-by-row="true">
+        @using (Html.BeginForm("PGetUser", "Home", FormMethod.Post))
+        {
+            <div class="panel">
+                <div class="panel-body">
+                    <div class="">
+                        <div class="form-group row">
+                            <div class="col-sm-12">
+                                <div>
+                                    <h4><center>Get user by Email or Hash</center></h4>
+                                </div>
+
+                                <div class="form-group row">
+                                    @Html.LabelFor(model => model.Email, new { @class = "col-sm-3 col-form-label" })
+                                    <div class="col-sm-9">
+                                        @Html.TextBoxFor(model => model.Email, new { @class = "form-control" })
+                                        @Html.ValidationMessageFor(model => model.Email)
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    @Html.LabelFor(model => model.Hash, new { @class = "col-sm-3 col-form-label" })
+                                    <div class="col-sm-9">
+                                        @Html.TextBoxFor(model => model.Hash, new { @class = "form-control" })
+                                        @Html.ValidationMessageFor(model => model.Hash)
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="rowError">@Html.ValidationSummary(true)</div>
+
+                        <div class="text-right">
+                            <a href="@Url.Action("Index", "Home")" class="button" style="margin-right: 10px;">Powrót</a>
+                            <button type="submit" value="True" class="btn btn-primary" id="validateButton2">Zapisz zmiany</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+
+    </div>
+</div>
