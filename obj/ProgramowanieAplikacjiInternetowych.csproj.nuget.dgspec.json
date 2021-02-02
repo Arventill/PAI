@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\DRAGON\\source\\repos\\ProgramowanieAplikacjiInternetowych\\ProgramowanieAplikacjiInternetowych.csproj": {}
+    "C:\\Users\\DRAGON\\source\\repos\\PAI\\ProgramowanieAplikacjiInternetowych.csproj": {}
   },
   "projects": {
-    "C:\\Users\\DRAGON\\source\\repos\\ProgramowanieAplikacjiInternetowych\\ProgramowanieAplikacjiInternetowych.csproj": {
+    "C:\\Users\\DRAGON\\source\\repos\\PAI\\ProgramowanieAplikacjiInternetowych.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\DRAGON\\source\\repos\\ProgramowanieAplikacjiInternetowych\\ProgramowanieAplikacjiInternetowych.csproj",
+        "projectUniqueName": "C:\\Users\\DRAGON\\source\\repos\\PAI\\ProgramowanieAplikacjiInternetowych.csproj",
         "projectName": "ProgramowanieAplikacjiInternetowych",
-        "projectPath": "C:\\Users\\DRAGON\\source\\repos\\ProgramowanieAplikacjiInternetowych\\ProgramowanieAplikacjiInternetowych.csproj",
+        "projectPath": "C:\\Users\\DRAGON\\source\\repos\\PAI\\ProgramowanieAplikacjiInternetowych.csproj",
         "packagesPath": "C:\\Users\\DRAGON\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\DRAGON\\source\\repos\\ProgramowanieAplikacjiInternetowych\\obj\\",
+        "outputPath": "C:\\Users\\DRAGON\\source\\repos\\PAI\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"
@@ -73,7 +73,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
         }
       }
     }

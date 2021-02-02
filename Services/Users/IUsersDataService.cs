@@ -41,8 +41,6 @@ namespace ProgramowanieAplikacjiInternetowych.Services.Users
         /// <returns>True if successful.</returns>
         bool SetNegativeStatus(string hash);
 
-        //Response<Dictionary<string, object>> GetClientData(string hash);
-
         /// <summary>
         /// 
         /// </summary>

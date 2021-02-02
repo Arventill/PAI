@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30804.86
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProgramowanieAplikacjiInternetowych", "ProgramowanieAplikacjiInternetowych.csproj", "{DBB6B679-28FA-4600-9A0C-A9C4E7AFE444}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProgramowanieAplikacjiInternetowych", "ProgramowanieAplikacjiInternetowych.csproj", "{DBB6B679-28FA-4600-9A0C-A9C4E7AFE444}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PAIMVC", "..\PAIMVC\PAIMVC\PAIMVC.csproj", "{A336FE42-695A-491E-A49A-7C90E5FE221C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{DBB6B679-28FA-4600-9A0C-A9C4E7AFE444}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DBB6B679-28FA-4600-9A0C-A9C4E7AFE444}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DBB6B679-28FA-4600-9A0C-A9C4E7AFE444}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A336FE42-695A-491E-A49A-7C90E5FE221C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A336FE42-695A-491E-A49A-7C90E5FE221C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A336FE42-695A-491E-A49A-7C90E5FE221C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A336FE42-695A-491E-A49A-7C90E5FE221C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
